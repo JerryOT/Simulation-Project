@@ -8,7 +8,7 @@ Colors = {
     'BLUE' : (0, 0, 255)
 }
 
-def GetColors():
+def Get_Colors():
     return Colors
 
 class MyText():
@@ -25,10 +25,10 @@ class MyText():
         self.background = background
         self.antialias = antialias
 
-    def SetString(self, s):
+    def Set_String(self, s):
         self.string = s
 
-    def SetPosition(self, x, y):
+    def Set_Position(self, x, y):
         new_x = x
         new_y = y
         self.pos = (new_x, new_y)
@@ -45,16 +45,16 @@ class Box(pygame.sprite.Sprite):
         self.color = color
         self.pos = (0,0)
         self.angle = 0
-        self.SetSize(width, height)
+        self.Set_Size(width, height)
 
-    def SetSize(self, width, height):
+    def Set_Size(self, width, height):
         self.image = pygame.Surface([width, height], flags=pygame.SRCALPHA)
         self.image.fill(self.color)
 
-    def SetRotation(self, angle):
+    def Set_Rotation(self, angle):
         self.angle = angle
 
-    def SetPosition(self, x, y):
+    def Set_Position(self, x, y):
         new_x = x
         new_y = y
         self.pos = (new_x, new_y)
@@ -73,15 +73,15 @@ class Circle(pygame.sprite.Sprite):
         self.color = color
         self.pos = (0,0)
         self.radius = radius
-        self.SetSize(radius)
+        self.Set_Size(radius)
 
-    def SetSize(self, radius):
+    def Set_Size(self, radius):
         size = radius * 2
         self.image = pygame.Surface((size, size), pygame.SRCALPHA)
         self.image.fill((0, 0, 0, 0))
         pygame.draw.circle(self.image, self.color, (self.radius, self.radius), self.radius)
 
-    def SetPosition(self, x, y):
+    def Set_Position(self, x, y):
         new_x = x
         new_y = y
         self.pos = (new_x, new_y)

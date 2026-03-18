@@ -19,7 +19,7 @@ def main():
 
     while True:
         clock.tick(60)
-        screen.fill(Component__UI.GetColors()['BLACK'])
+        screen.fill(Component__UI.Get_Colors()['BLACK'])
 
         event = pygame.event.poll()
         if event.type == pygame.QUIT:
@@ -37,12 +37,13 @@ def main():
 
 
         #TEST CASE
-        Box_A = Component__UI.Box(Component__UI.GetColors()['RED'], 40, 40)
-        Box_A.SetPosition(0,0)
+        Box_A = Component__UI.Box(Component__UI.Get_Colors()['RED'], 40, 40)
+        Box_A.Set_Position(0,0)
+        Box_A.Set_Rotation(20)
         Box_A.Draw(screen, screen_width, screen_height)
 
-        Circle_A = Component__UI.Circle(Component__UI.GetColors()['RED'], 20)
-        Circle_A.SetPosition(80,0)
+        Circle_A = Component__UI.Circle(Component__UI.Get_Colors()['RED'], 20)
+        Circle_A.Set_Position(80,0)
         Circle_A.Draw(screen, screen_width, screen_height)
         
 
