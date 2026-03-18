@@ -1,7 +1,5 @@
 import pygame, sys
 import matplotlib.pyplot as plt
-import Component__UI
-import Component__Physics
 import Enums
 import Classes
 
@@ -40,15 +38,6 @@ def main():
 
 
         #TEST CASE
-        Box_A = Component__UI.Box(Enums.Get_Colors()['RED'], 40, 40)
-        Box_A.Set_Position(0,0)
-        Box_A.Set_Rotation(20)
-        Box_A.Draw(screen, screen_width, screen_height)
-
-        Circle_A = Component__UI.Circle(Enums.Get_Colors()['RED'], 20)
-        Circle_A.Set_Position(80,0)
-        Circle_A.Draw(screen, screen_width, screen_height)
-
         Bird_A = Classes.Bird(1, Enums.Get_Colors()['BLUE'], 10)
         Bird_A.Set_Position(40,40)
         Bird_A.Draw(screen, screen_width, screen_height)

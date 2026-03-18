@@ -20,6 +20,10 @@ class Bird():
         #TODO
         pass
 
+    def step(cur_time, object_list):
+        #TODO
+        pass
+
     def Draw(self, screen, screen_width, screen_height):
         self.UI_frame.Draw(screen, screen_width, screen_height)
 
@@ -38,6 +42,10 @@ class Pig():
         pass
 
     def Impulse():
+        #TODO
+        pass
+
+    def step(cur_time, object_list):
         #TODO
         pass
 
