@@ -1,20 +1,10 @@
 import pygame
-
-Colors = {
-    'BLACK' : (0, 0, 0),
-    'WHITE' : (255, 255, 255),
-    'RED' : (255, 0, 0),
-    'GREEN' : (0, 255, 0),
-    'BLUE' : (0, 0, 255)
-}
-
-def Get_Colors():
-    return Colors
+import Enums
 
 class MyText():
     def __init__(self,
                  color,
-                 background = Colors['BLACK'], antialias=True,
+                 background = Enums.Get_Colors()['BLACK'], antialias=True,
                  fontname="comicsansms", fontsize=16
                  ):
         pygame.font.init()
