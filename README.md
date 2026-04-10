@@ -1,1 +1,1 @@
-<video src="https://github.com/JerryOT/Simulation-Project/blob/master/Video.mp4" width="300" />
+[![Watch the video][(https://raw.githubusercontent.com/username/repository/branch/path/to/thumbnail.jpg)](https://raw.githubusercontent.com/username/repository/branch/path/to/video.mp4)](https://github.com/JerryOT/Simulation-Project/blob/master/Video.mp4)
